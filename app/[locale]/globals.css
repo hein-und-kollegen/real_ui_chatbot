@@ -75,10 +75,10 @@
     --card: 210 100% 15%; /* Sehr dunkles Blau für Karten-Hintergrund */
     --card-foreground: 0 0% 98%; /* Weißer Text auf Karten */
 
-    --border: 210 100% 20%; /* Etwas helleres Blau für Grenzen */
+    --border: #d1b173; /* Etwas helleres Blau für Grenzen */
     --input: 210 100% 20%; /* Dunkelblau für Eingaben */
 
-    --primary: 210 100% 30%; /* Helleres Blau für primäre Elemente */
+    --primary: #d1b173; /* Helleres Blau für primäre Elemente */
     --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
 
     --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
@@ -90,7 +90,7 @@
     --destructive: 0 80% 50%; /* Rot für destruktive Aktionen */
     --destructive-foreground: 0 0% 98%; /* Weißer Text auf destruktiven Elementen */
 
-    --ring: 210 100% 30%; /* Blau für Ringe und Fokus-Indikatoren */
+    --ring: #d1b173; /* Blau für Ringe und Fokus-Indikatoren */
   }
 }
 
