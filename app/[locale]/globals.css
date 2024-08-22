@@ -63,34 +63,34 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 210 100% 12%; /* Dunkelblau als Hintergrund (#00263e) */
+    --foreground: 0 0% 98%; /* Heller Text im Dunkelmodus (nahezu weiß) */
 
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --muted: 210 30% 20%; /* Dunkelblau für abgedämpfte Elemente */
+    --muted-foreground: 0 0% 80%; /* Helleres Grau für den Text auf muted-Hintergründen */
 
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 210 100% 15%; /* Etwas helleres Dunkelblau für Popovers */
+    --popover-foreground: 0 0% 98%; /* Weißer Text im Popover */
 
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 210 100% 15%; /* Sehr dunkles Blau für Karten-Hintergrund */
+    --card-foreground: 0 0% 98%; /* Weißer Text auf Karten */
 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
+    --border: 210 100% 20%; /* Etwas helleres Blau für Grenzen */
+    --input: 210 100% 20%; /* Dunkelblau für Eingaben */
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --primary: 210 100% 30%; /* Helleres Blau für primäre Elemente */
+    --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
 
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
+    --secondary-foreground: 0 0% 98%; /* Weißer Text auf sekundären Elementen */
 
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 210 100% 35%; /* Hellblau für Akzente */
+    --accent-foreground: 0 0% 98%; /* Weißer Text auf Akzenten */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 85.7% 97.3%;
+    --destructive: 0 80% 50%; /* Rot für destruktive Aktionen */
+    --destructive-foreground: 0 0% 98%; /* Weißer Text auf destruktiven Elementen */
 
-    --ring: 0 0% 14.9%;
+    --ring: 210 100% 30%; /* Blau für Ringe und Fokus-Indikatoren */
   }
 }
 
