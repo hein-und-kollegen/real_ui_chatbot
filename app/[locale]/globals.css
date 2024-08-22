@@ -30,66 +30,67 @@
 
 @layer base {
   :root {
-    --background: #ffffff; /* Tailwind: bg-white */
-    --foreground: #0a0a0a; /* Tailwind: text-gray-900 */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
 
-    --muted: #f3f4f6; /* Tailwind: bg-gray-100 */
-    --muted-foreground: #737373; /* Tailwind: text-gray-600 */
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
 
-    --popover: #ffffff; /* Tailwind: bg-white */
-    --popover-foreground: #0a0a0a; /* Tailwind: text-gray-900 */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
 
-    --card: #ffffff; /* Tailwind: bg-white */
-    --card-foreground: #0a0a0a; /* Tailwind: text-gray-900 */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
 
-    --border: #d1d5db; /* Tailwind: border-gray-300 */
-    --input: #d1d5db; /* Tailwind: border-gray-300 */
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
 
-    --primary: #1d4ed8; /* Tailwind: bg-blue-700 */
-    --primary-foreground: #ffffff; /* Tailwind: text-white */
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: #f3f4f6; /* Tailwind: bg-gray-100 */
-    --secondary-foreground: #0a0a0a; /* Tailwind: text-gray-900 */
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
 
-    --accent: #e11d48; /* Tailwind: bg-rose-500 */
-    --accent-foreground: #ffffff; /* Tailwind: text-white */
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
 
-    --destructive: #ef4444; /* Tailwind: bg-red-500 */
-    --destructive-foreground: #ffffff; /* Tailwind: text-white */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --ring: #d1b173; /* Custom Color */
-    --radius: 0.5rem; /* Standard Tailwind Border Radius */
+    --ring: 0 0% 63.9%;
+
+    --radius: 0.5rem;
   }
 
   .dark {
-    --background: #00263e; /* Dunkelblau als Hintergrund (#00263e) */
-    --foreground: #f3f4f6; /* Tailwind: text-gray-100 */
+    --background: 210 100% 12%; /* Dunkelblau als Hintergrund (#00263e) */
+    --foreground: 0 0% 98%; /* Heller Text im Dunkelmodus (nahezu weiß) */
 
-    --muted: #1e293b; /* Tailwind: bg-gray-800 */
-    --muted-foreground: #cbd5e1; /* Tailwind: text-gray-400 */
+    --muted: 210 30% 20%; /* Dunkelblau für abgedämpfte Elemente */
+    --muted-foreground: 0 0% 80%; /* Helleres Grau für den Text auf muted-Hintergründen */
 
-    --popover: #334155; /* Tailwind: bg-gray-700 */
-    --popover-foreground: #f3f4f6; /* Tailwind: text-gray-100 */
+    --popover: 210 100% 15%; /* Etwas helleres Dunkelblau für Popovers */
+    --popover-foreground: 0 0% 98%; /* Weißer Text im Popover */
 
-    --card: #475569; /* Tailwind: bg-gray-600 */
-    --card-foreground: #f3f4f6; /* Tailwind: text-gray-100 */
+    --card: 210 100% 15%; /* Sehr dunkles Blau für Karten-Hintergrund */
+    --card-foreground: 0 0% 98%; /* Weißer Text auf Karten */
 
-    --border: #64748b; /* Tailwind: border-gray-500 */
-    --input: #64748b; /* Tailwind: border-gray-500 */
+    --border: 210 100% 20%; /* Etwas helleres Blau für Grenzen */
+    --input: 210 100% 20%; /* Dunkelblau für Eingaben */
 
-    --primary: #3b82f6; /* Tailwind: bg-blue-600 */
-    --primary-foreground: #ffffff; /* Tailwind: text-white */
+    --primary: 210 100% 30%; /* Helleres Blau für primäre Elemente */
+    --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
 
-    --secondary: #1e293b; /* Tailwind: bg-gray-800 */
-    --secondary-foreground: #f3f4f6; /* Tailwind: text-gray-100 */
+    --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
+    --secondary-foreground: 0 0% 98%; /* Weißer Text auf sekundären Elementen */
 
-    --accent: #fca311; /* Custom Color */
-    --accent-foreground: #ffffff; /* Tailwind: text-white */
+    --accent: 210 100% 35%; /* Hellblau für Akzente */
+    --accent-foreground: 0 0% 98%; /* Weißer Text auf Akzenten */
 
-    --destructive: #b91c1c; /* Tailwind: bg-red-700 */
-    --destructive-foreground: #ffffff; /* Tailwind: text-white */
+    --destructive: 0 80% 50%; /* Rot für destruktive Aktionen */
+    --destructive-foreground: 0 0% 98%; /* Weißer Text auf destruktiven Elementen */
 
-    --ring: #d1b173; /* Custom Color */
+    --ring: 210 100% 30%; /* Blau für Ringe und Fokus-Indikatoren */
   }
 }
 
