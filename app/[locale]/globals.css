@@ -30,35 +30,35 @@
 
 @layer base {
   :root {
-    --background: #d1b173; /* Hauptfarbe als Hintergrund */
-    --foreground: #2a2a2a; /* Dunkler Text für guten Kontrast auf dem goldenen Hintergrund */
-
-    --muted: #e7d3ab; /* Ein hellerer, abgedämpfter Ton für sekundäre Elemente */
-    --muted-foreground: #5f4b32; /* Dunklerer Text für abgedämpfte Elemente */
-
-    --popover: #d1b173; /* Gleiche Hauptfarbe für Popovers */
-    --popover-foreground: #2a2a2a; /* Dunkler Text im Popover */
-
-    --card: #f2e2c4; /* Noch hellerer Ton für Karten */
-    --card-foreground: #2a2a2a; /* Dunkler Text auf Karten */
-
-    --border: #c5a56b; /* Ein etwas dunklerer Ton für Grenzen */
-    --input: #c5a56b; /* Gleiche Farbe für Eingaben */
-
-    --primary: #b38c51; /* Ein kräftigerer Braunton für primäre Elemente */
-    --primary-foreground: #ffffff; /* Weißer Text auf primären Elementen */
-
-    --secondary: #e7d3ab; /* Hellere Version der Hauptfarbe für sekundäre Elemente */
-    --secondary-foreground: #5f4b32; /* Dunklerer Text auf sekundären Elementen */
-
-    --accent: #9b6d32; /* Akzentfarbe in einem kräftigen Braunton */
-    --accent-foreground: #ffffff; /* Weißer Text auf Akzenten */
-
-    --destructive: #b91c1c; /* Rot für destruktive Aktionen */
-    --destructive-foreground: #ffffff; /* Weißer Text auf destruktiven Elementen */
-
-    --ring: #d1b173; /* Hauptfarbe für Ringe und Fokus-Indikatoren */
-
+    --background: 39 45% 64%; /* Hauptfarbe als Hintergrund (#d1b173) */
+    --foreground: 0 0% 16%; /* Dunkler Text für guten Kontrast auf dem goldenen Hintergrund (#2a2a2a) */
+  
+    --muted: 42 56% 80%; /* Ein hellerer, abgedämpfter Ton für sekundäre Elemente (#e7d3ab) */
+    --muted-foreground: 35 28% 27%; /* Dunklerer Text für abgedämpfte Elemente (#5f4b32) */
+  
+    --popover: 39 45% 64%; /* Gleiche Hauptfarbe für Popovers (#d1b173) */
+    --popover-foreground: 0 0% 16%; /* Dunkler Text im Popover (#2a2a2a) */
+  
+    --card: 39 61% 85%; /* Noch hellerer Ton für Karten (#f2e2c4) */
+    --card-foreground: 0 0% 16%; /* Dunkler Text auf Karten (#2a2a2a) */
+  
+    --border: 39 41% 60%; /* Ein etwas dunklerer Ton für Grenzen (#c5a56b) */
+    --input: 39 41% 60%; /* Gleiche Farbe für Eingaben (#c5a56b) */
+  
+    --primary: 36 40% 51%; /* Ein kräftigerer Braunton für primäre Elemente (#b38c51) */
+    --primary-foreground: 0 0% 100%; /* Weißer Text auf primären Elementen (#ffffff) */
+  
+    --secondary: 42 56% 80%; /* Hellere Version der Hauptfarbe für sekundäre Elemente (#e7d3ab) */
+    --secondary-foreground: 35 28% 27%; /* Dunklerer Text auf sekundären Elementen (#5f4b32) */
+  
+    --accent: 36 52% 40%; /* Akzentfarbe in einem kräftigen Braunton (#9b6d32) */
+    --accent-foreground: 0 0% 100%; /* Weißer Text auf Akzenten (#ffffff) */
+  
+    --destructive: 0 74% 36%; /* Rot für destruktive Aktionen (#b91c1c) */
+    --destructive-foreground: 0 0% 100%; /* Weißer Text auf destruktiven Elementen (#ffffff) */
+  
+    --ring: 39 45% 64%; /* Hauptfarbe für Ringe und Fokus-Indikatoren (#d1b173) */
+  
     --radius: 0.5rem; /* Standard Border Radius */
   }
 
