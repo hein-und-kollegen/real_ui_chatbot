@@ -30,36 +30,36 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --background: #d1b173; /* Hauptfarbe als Hintergrund */
+    --foreground: #2a2a2a; /* Dunkler Text für guten Kontrast auf dem goldenen Hintergrund */
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --muted: #e7d3ab; /* Ein hellerer, abgedämpfter Ton für sekundäre Elemente */
+    --muted-foreground: #5f4b32; /* Dunklerer Text für abgedämpfte Elemente */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --popover: #d1b173; /* Gleiche Hauptfarbe für Popovers */
+    --popover-foreground: #2a2a2a; /* Dunkler Text im Popover */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card: #f2e2c4; /* Noch hellerer Ton für Karten */
+    --card-foreground: #2a2a2a; /* Dunkler Text auf Karten */
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
+    --border: #c5a56b; /* Ein etwas dunklerer Ton für Grenzen */
+    --input: #c5a56b; /* Gleiche Farbe für Eingaben */
 
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
+    --primary: #b38c51; /* Ein kräftigerer Braunton für primäre Elemente */
+    --primary-foreground: #ffffff; /* Weißer Text auf primären Elementen */
 
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: #e7d3ab; /* Hellere Version der Hauptfarbe für sekundäre Elemente */
+    --secondary-foreground: #5f4b32; /* Dunklerer Text auf sekundären Elementen */
 
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --accent: #9b6d32; /* Akzentfarbe in einem kräftigen Braunton */
+    --accent-foreground: #ffffff; /* Weißer Text auf Akzenten */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: #b91c1c; /* Rot für destruktive Aktionen */
+    --destructive-foreground: #ffffff; /* Weißer Text auf destruktiven Elementen */
 
-    --ring: 0 0% 63.9%;
+    --ring: #d1b173; /* Hauptfarbe für Ringe und Fokus-Indikatoren */
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; /* Standard Border Radius */
   }
 
   .dark {
