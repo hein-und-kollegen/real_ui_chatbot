@@ -30,67 +30,66 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --background: #ffffff; /* Tailwind: bg-white */
+    --foreground: #0a0a0a; /* Tailwind: text-gray-900 */
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --muted: #f3f4f6; /* Tailwind: bg-gray-100 */
+    --muted-foreground: #737373; /* Tailwind: text-gray-600 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --popover: #ffffff; /* Tailwind: bg-white */
+    --popover-foreground: #0a0a0a; /* Tailwind: text-gray-900 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card: #ffffff; /* Tailwind: bg-white */
+    --card-foreground: #0a0a0a; /* Tailwind: text-gray-900 */
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
+    --border: #d1d5db; /* Tailwind: border-gray-300 */
+    --input: #d1d5db; /* Tailwind: border-gray-300 */
 
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
+    --primary: #1d4ed8; /* Tailwind: bg-blue-700 */
+    --primary-foreground: #ffffff; /* Tailwind: text-white */
 
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: #f3f4f6; /* Tailwind: bg-gray-100 */
+    --secondary-foreground: #0a0a0a; /* Tailwind: text-gray-900 */
 
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --accent: #e11d48; /* Tailwind: bg-rose-500 */
+    --accent-foreground: #ffffff; /* Tailwind: text-white */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: #ef4444; /* Tailwind: bg-red-500 */
+    --destructive-foreground: #ffffff; /* Tailwind: text-white */
 
-    --ring: 0 0% 63.9%;
-
-    --radius: 0.5rem;
+    --ring: #d1b173; /* Custom Color */
+    --radius: 0.5rem; /* Standard Tailwind Border Radius */
   }
 
   .dark {
     --background: #00263e; /* Dunkelblau als Hintergrund (#00263e) */
-    --foreground: 0 0% 98%; /* Heller Text im Dunkelmodus (nahezu weiß) */
+    --foreground: #f3f4f6; /* Tailwind: text-gray-100 */
 
-    --muted: 210 30% 20%; /* Dunkelblau für abgedämpfte Elemente */
-    --muted-foreground: 0 0% 80%; /* Helleres Grau für den Text auf muted-Hintergründen */
+    --muted: #1e293b; /* Tailwind: bg-gray-800 */
+    --muted-foreground: #cbd5e1; /* Tailwind: text-gray-400 */
 
-    --popover: #fca311; /* Etwas helleres Dunkelblau für Popovers */
-    --popover-foreground: 0 0% 98%; /* Weißer Text im Popover */
+    --popover: #334155; /* Tailwind: bg-gray-700 */
+    --popover-foreground: #f3f4f6; /* Tailwind: text-gray-100 */
 
-    --card: #eae2b7; /* Sehr dunkles Blau für Karten-Hintergrund */
-    --card-foreground: 0 0% 98%; /* Weißer Text auf Karten */
+    --card: #475569; /* Tailwind: bg-gray-600 */
+    --card-foreground: #f3f4f6; /* Tailwind: text-gray-100 */
 
-    --border: #d1b173; /* Etwas helleres Blau für Grenzen */
-    --input: #fca311; /* Dunkelblau für Eingaben */
+    --border: #64748b; /* Tailwind: border-gray-500 */
+    --input: #64748b; /* Tailwind: border-gray-500 */
 
-    --primary: #d62828; /* Helleres Blau für primäre Elemente */
-    --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
+    --primary: #3b82f6; /* Tailwind: bg-blue-600 */
+    --primary-foreground: #ffffff; /* Tailwind: text-white */
 
-    --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
-    --secondary-foreground: 0 0% 98%; /* Weißer Text auf sekundären Elementen */
+    --secondary: #1e293b; /* Tailwind: bg-gray-800 */
+    --secondary-foreground: #f3f4f6; /* Tailwind: text-gray-100 */
 
-    --accent: #fca311; /* Hellblau für Akzente */
-    --accent-foreground: 0 0% 98%; /* Weißer Text auf Akzenten */
+    --accent: #fca311; /* Custom Color */
+    --accent-foreground: #ffffff; /* Tailwind: text-white */
 
-    --destructive: 0 80% 50%; /* Rot für destruktive Aktionen */
-    --destructive-foreground: 0 0% 98%; /* Weißer Text auf destruktiven Elementen */
+    --destructive: #b91c1c; /* Tailwind: bg-red-700 */
+    --destructive-foreground: #ffffff; /* Tailwind: text-white */
 
-    --ring: #d1b173; /* Blau für Ringe und Fokus-Indikatoren */
+    --ring: #d1b173; /* Custom Color */
   }
 }
 
