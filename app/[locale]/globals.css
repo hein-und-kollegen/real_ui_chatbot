@@ -69,22 +69,22 @@
     --muted: 210 30% 20%; /* Dunkelblau für abgedämpfte Elemente */
     --muted-foreground: 0 0% 80%; /* Helleres Grau für den Text auf muted-Hintergründen */
 
-    --popover: blue; /* Etwas helleres Dunkelblau für Popovers */
+    --popover: #fca311; /* Etwas helleres Dunkelblau für Popovers */
     --popover-foreground: 0 0% 98%; /* Weißer Text im Popover */
 
-    --card: green; /* Sehr dunkles Blau für Karten-Hintergrund */
+    --card: #eae2b7; /* Sehr dunkles Blau für Karten-Hintergrund */
     --card-foreground: 0 0% 98%; /* Weißer Text auf Karten */
 
     --border: #d1b173; /* Etwas helleres Blau für Grenzen */
-    --input: red; /* Dunkelblau für Eingaben */
+    --input: #fca311; /* Dunkelblau für Eingaben */
 
-    --primary: #d1b173; /* Helleres Blau für primäre Elemente */
+    --primary: #d62828; /* Helleres Blau für primäre Elemente */
     --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
 
     --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
     --secondary-foreground: 0 0% 98%; /* Weißer Text auf sekundären Elementen */
 
-    --accent: green; /* Hellblau für Akzente */
+    --accent: #fca311; /* Hellblau für Akzente */
     --accent-foreground: 0 0% 98%; /* Weißer Text auf Akzenten */
 
     --destructive: 0 80% 50%; /* Rot für destruktive Aktionen */
