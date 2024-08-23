@@ -217,6 +217,13 @@ export const SidebarDataList: FC<SidebarDataListProps> = ({
   const dataWithFolders = data.filter(item => item.folder_id)
   const dataWithoutFolders = data.filter(item => item.folder_id === null)
 
+  const dateCategoryMapping: { [key: string]: "Today" | "Yesterday" | "Previous Week" | "Older" } = {
+    "Heute": "Today",
+    "Gestern": "Yesterday",
+    "Letzte Woche": "Previous Week",
+    "Älter": "Older"
+  };
+
   return (
     <>
       <div
@@ -263,22 +270,18 @@ export const SidebarDataList: FC<SidebarDataListProps> = ({
 
             {contentType === "chats" ? (
               <>
-                {["Today", "Yesterday", "Previous Week", "Older"].map(
+                {["Heute", "Gestern", "Letzte Woche", "Älter"].map(
                   dateCategory => {
                     const sortedData = getSortedData(
                       dataWithoutFolders,
-                      dateCategory as
-                        | "Today"
-                        | "Yesterday"
-                        | "Previous Week"
-                        | "Older"
-                    )
+                      dateCategoryMapping[dateCategory] // Verwende das Mapping, um den passenden englischen Begriff zu erhalten
+                    );
 
                     return (
                       sortedData.length > 0 && (
                         <div key={dateCategory} className="pb-2">
                           <div className="text-muted-foreground mb-1 text-sm font-bold">
-                            {dateCategory}
+                            {dateCategory} {/* Hier wird die deutsche Kategorie angezeigt */}
                           </div>
 
                           <div

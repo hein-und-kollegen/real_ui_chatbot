@@ -153,7 +153,7 @@ export const WorkspaceSettings: FC<WorkspaceSettingsProps> = ({}) => {
       })
     })
 
-    toast.success("Workspace updated!")
+    toast.success("Arbeitsbereich aktualisiert!")
   }
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
@@ -187,27 +187,27 @@ export const WorkspaceSettings: FC<WorkspaceSettingsProps> = ({}) => {
         <div className="grow overflow-auto">
           <SheetHeader>
             <SheetTitle className="flex items-center justify-between">
-              Workspace Settings
+            Arbeitsbereich-Einstellungen
               {selectedWorkspace?.is_home && <IconHome />}
             </SheetTitle>
 
             {selectedWorkspace?.is_home && (
               <div className="text-sm font-light">
-                This is your home workspace for personal use.
-              </div>
+                Dies ist Ihr persönlicher Arbeitsbereich für den persönlichen Gebrauch.
+                </div>
             )}
           </SheetHeader>
 
           <Tabs defaultValue="main">
             <TabsList className="mt-4 grid w-full grid-cols-2">
-              <TabsTrigger value="main">Main</TabsTrigger>
-              <TabsTrigger value="defaults">Defaults</TabsTrigger>
+              <TabsTrigger value="main">Allgemein</TabsTrigger>
+              <TabsTrigger value="defaults">Standardeinstellungen</TabsTrigger>
             </TabsList>
 
             <TabsContent className="mt-4 space-y-4" value="main">
               <>
                 <div className="space-y-1">
-                  <Label>Workspace Name</Label>
+                  <Label>Arbeitsbereich-Name</Label>
 
                   <Input
                     placeholder="Name..."
@@ -217,17 +217,17 @@ export const WorkspaceSettings: FC<WorkspaceSettingsProps> = ({}) => {
                 </div>
 
                 {/* <div className="space-y-1">
-                  <Label>Description</Label>
+                  <Label>Beschreibung</Label>
 
                   <Input
-                    placeholder="Description... (optional)"
+                    placeholder="Beschreibung... (optional)"
                     value={description}
                     onChange={e => setDescription(e.target.value)}
                   />
                 </div> */}
 
                 <div className="space-y-1">
-                  <Label>Workspace Image</Label>
+                  <Label>Arbeitsbereich-Bild</Label>
 
                   <ImagePicker
                     src={imageLink}
@@ -242,11 +242,11 @@ export const WorkspaceSettings: FC<WorkspaceSettingsProps> = ({}) => {
 
               <div className="space-y-1">
                 <Label>
-                  How would you like the AI to respond in this workspace?
+                    Wie soll die KI in diesem Arbeitsbereich antworten?
                 </Label>
 
                 <TextareaAutosize
-                  placeholder="Instructions... (optional)"
+                  placeholder="Befehle... (optional)"
                   value={instructions}
                   onValueChange={setInstructions}
                   minRows={5}
@@ -263,7 +263,7 @@ export const WorkspaceSettings: FC<WorkspaceSettingsProps> = ({}) => {
 
             <TabsContent className="mt-5" value="defaults">
               <div className="mb-4 text-sm">
-                These are the settings your workspace begins with when selected.
+              Dies sind die Einstellungen, die Ihr Arbeitsbereich standardmäßig verwendet.
               </div>
 
               <ChatSettingsForm
@@ -286,11 +286,11 @@ export const WorkspaceSettings: FC<WorkspaceSettingsProps> = ({}) => {
 
           <div className="space-x-2">
             <Button variant="ghost" onClick={() => setIsOpen(false)}>
-              Cancel
+            Abbrechen
             </Button>
 
             <Button ref={buttonRef} onClick={handleSave}>
-              Save
+            Speichern
             </Button>
           </div>
         </div>

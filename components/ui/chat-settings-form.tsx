@@ -55,7 +55,7 @@ export const ChatSettingsForm: FC<ChatSettingsFormProps> = ({
 
         <TextareaAutosize
           className="bg-background border-input border-2"
-          placeholder="You are a helpful AI assistant."
+          placeholder="Du bist ein hilfreicher KI-Assistent."
           onValueChange={prompt => {
             onChangeChatSettings({ ...chatSettings, prompt })
           }}
@@ -119,7 +119,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
     <div className="mt-5">
       <div className="space-y-3">
         <Label className="flex items-center space-x-1">
-          <div>Temperature:</div>
+          <div>Temperatur:</div>
 
           <div>{chatSettings.temperature}</div>
         </Label>
@@ -140,7 +140,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
 
       <div className="mt-6 space-y-3">
         <Label className="flex items-center space-x-1">
-          <div>Context Length:</div>
+          <div>Context Länge:</div>
 
           <div>{chatSettings.contextLength}</div>
         </Label>
@@ -175,7 +175,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
           }
         />
 
-        <Label>Chats Include Profile Context</Label>
+        <Label>Profilkontext einbeziehen</Label>
 
         {showTooltip && (
           <WithTooltip
@@ -203,7 +203,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
           }
         />
 
-        <Label>Chats Include Workspace Instructions</Label>
+        <Label>Arbeitsbereichs-Anweisungen einbeziehen</Label>
 
         {showTooltip && (
           <WithTooltip
@@ -222,7 +222,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
       </div>
 
       <div className="mt-5">
-        <Label>Embeddings Provider</Label>
+        <Label>Eingebundene Bots</Label>
 
         <Select
           value={chatSettings.embeddingsProvider}
