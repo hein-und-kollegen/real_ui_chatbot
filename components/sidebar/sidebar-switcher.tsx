@@ -84,7 +84,7 @@ export const SidebarSwitcher: FC<SidebarSwitcherProps> = ({
         {/* <Alerts /> */}
 
         <WithTooltip
-          display={<div>Profile Settings</div>}
+          display={<div>Profileinstellungen</div>}
           trigger={<ProfileSettings />}
         />
       </div>

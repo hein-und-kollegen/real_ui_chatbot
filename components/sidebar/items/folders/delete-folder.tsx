@@ -110,13 +110,13 @@ export const DeleteFolder: FC<DeleteFolderProps> = ({
           <DialogTitle>Delete {folder.name}</DialogTitle>
 
           <DialogDescription>
-            Are you sure you want to delete this folder?
+            Willst du wirklich diesen Ordner löschen?
           </DialogDescription>
         </DialogHeader>
 
         <DialogFooter>
           <Button variant="ghost" onClick={() => setShowFolderDialog(false)}>
-            Cancel
+            Abbruch
           </Button>
 
           <Button
@@ -124,7 +124,7 @@ export const DeleteFolder: FC<DeleteFolderProps> = ({
             variant="destructive"
             onClick={handleDeleteFolderAndItems}
           >
-            Delete Folder & Included Items
+          Ordner und enthaltene Elemente löschen          
           </Button>
 
           <Button
@@ -132,7 +132,7 @@ export const DeleteFolder: FC<DeleteFolderProps> = ({
             variant="destructive"
             onClick={handleDeleteFolderOnly}
           >
-            Delete Folder Only
+            Nur Ordner löschen
           </Button>
         </DialogFooter>
       </DialogContent>
