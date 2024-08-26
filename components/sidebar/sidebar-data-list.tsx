@@ -28,6 +28,17 @@ interface SidebarDataListProps {
   folders: Tables<"folders">[]
 }
 
+const translationMap = {
+  chats: "Chats",
+  presets: "Voreinstellungen",
+  prompts: "Aufforderungen",
+  files: "Dateien",
+  collections: "Sammlungen",
+  assistants: "Assistenten",
+  tools: "Werkzeuge",
+  models: "Modelle",
+};
+
 export const SidebarDataList: FC<SidebarDataListProps> = ({
   contentType,
   data,
@@ -216,6 +227,8 @@ export const SidebarDataList: FC<SidebarDataListProps> = ({
 
   const dataWithFolders = data.filter(item => item.folder_id)
   const dataWithoutFolders = data.filter(item => item.folder_id === null)
+  const translatedContentType = translationMap[contentType];
+
 
   return (
     <>
@@ -227,7 +240,7 @@ export const SidebarDataList: FC<SidebarDataListProps> = ({
         {data.length === 0 && (
           <div className="flex grow flex-col items-center justify-center">
             <div className=" text-centertext-muted-foreground p-8 text-lg italic">
-              No {contentType}.
+              Keine {translatedContentType}.
             </div>
           </div>
         )}
