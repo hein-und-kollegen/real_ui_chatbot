@@ -117,8 +117,8 @@ export const SidebarItem: FC<SidebarItemProps> = ({
         {icon}
 
         <div className="ml-3 flex-1 truncate text-sm font-semibold">
-        {item.name} - {translatedContentType}
-        </div>
+          dfg dgf       
+</div>
 
         {/* TODO */}
         {/* {isHovering && (
