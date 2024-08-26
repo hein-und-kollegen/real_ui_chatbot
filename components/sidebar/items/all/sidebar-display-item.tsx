@@ -29,6 +29,17 @@ export const SidebarItem: FC<SidebarItemProps> = ({
 
   const router = useRouter()
 
+  const translationMap = {
+    chats: "Chats",
+    presets: "Voreinstellungen",
+    prompts: "Aufforderungen",
+    files: "Dateien",
+    collections: "Sammlungen",
+    assistants: "Assistenten",
+    tools: "Werkzeuge",
+    models: "Modelle",
+  };
+
   const itemRef = useRef<HTMLDivElement>(null)
 
   const [isHovering, setIsHovering] = useState(false)
@@ -72,6 +83,8 @@ export const SidebarItem: FC<SidebarItemProps> = ({
       itemRef.current?.click()
     }
   }
+  const translatedContentType = translationMap[contentType];
+
 
   // const handleClickAction = async (
   //   e: React.MouseEvent<SVGSVGElement, MouseEvent>
@@ -104,7 +117,7 @@ export const SidebarItem: FC<SidebarItemProps> = ({
         {icon}
 
         <div className="ml-3 flex-1 truncate text-sm font-semibold">
-          {item.name}
+        {item.name} - {translatedContentType}
         </div>
 
         {/* TODO */}
