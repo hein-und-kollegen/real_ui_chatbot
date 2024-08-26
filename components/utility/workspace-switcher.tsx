@@ -60,7 +60,7 @@ export const WorkspaceSwitcher: FC<WorkspaceSwitcherProps> = ({}) => {
         selectedWorkspace.include_workspace_instructions,
       instructions: selectedWorkspace.instructions,
       is_home: false,
-      name: "New Workspace"
+      name: "Neuer Arbeitsbereich"
     })
 
     setWorkspaces([...workspaces, createdWorkspace])
@@ -124,7 +124,7 @@ export const WorkspaceSwitcher: FC<WorkspaceSwitcherProps> = ({}) => {
             </div>
           )}
 
-          {getWorkspaceName(value) || "Select workspace..."}
+          {getWorkspaceName(value) || "Arbeitsbereich auswählen..."}
         </div>
 
         <ChevronsUpDown className="ml-2 size-4 shrink-0 opacity-50" />
@@ -138,7 +138,7 @@ export const WorkspaceSwitcher: FC<WorkspaceSwitcherProps> = ({}) => {
             onClick={handleCreateWorkspace}
           >
             <IconPlus />
-            <div className="ml-2">New Workspace</div>
+            <div className="ml-2">Neuer Arbeitsbereich</div>
           </Button>
 
           <Input

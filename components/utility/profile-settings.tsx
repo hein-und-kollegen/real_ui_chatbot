@@ -259,8 +259,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
       if (!usernameRegex.test(username)) {
         setUsernameAvailable(false)
         toast.error(
-          "Username must be letters, numbers, or underscores only - no other characters or spacing allowed."
-        )
+        "Der Benutzername darf nur Buchstaben, Zahlen oder Unterstriche enthalten - keine anderen Zeichen oder Leerzeichen sind erlaubt."        )
         return
       }
 
@@ -319,7 +318,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
         <div className="grow overflow-auto">
           <SheetHeader>
             <SheetTitle className="flex items-center justify-between space-x-2">
-              <div>User Settings</div>
+              <div>Benutzereinstellungen</div>
 
               <Button
                 tabIndex={-1}
@@ -342,14 +341,14 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
             <TabsContent className="mt-4 space-y-4" value="profile">
               <div className="space-y-1">
                 <div className="flex items-center space-x-2">
-                  <Label>Username</Label>
+                  <Label>Benutzername</Label>
 
                   <div className="text-xs">
                     {username !== profile.username ? (
                       usernameAvailable ? (
-                        <div className="text-green-500">AVAILABLE</div>
+                        <div className="text-green-500">VERFÜGBAR</div>
                       ) : (
-                        <div className="text-red-500">UNAVAILABLE</div>
+                        <div className="text-red-500">NICHT VERFÜGBAR</div>
                       )
                     ) : null}
                   </div>
@@ -388,7 +387,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
               </div>
 
               <div className="space-y-1">
-                <Label>Profile Image</Label>
+                <Label>Profilbild</Label>
 
                 <ImagePicker
                   src={profileImageSrc}
@@ -401,7 +400,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
               </div>
 
               <div className="space-y-1">
-                <Label>Chat Display Name</Label>
+                <Label>Anzeigename im Chat</Label>
 
                 <Input
                   placeholder="Chat display name..."
@@ -413,8 +412,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
 
               <div className="space-y-1">
                 <Label className="text-sm">
-                  What would you like the AI to know about you to provide better
-                  responses?
+                Was möchtest du der KI über dich mitteilen, um bessere Antworten zu erhalten?
                 </Label>
 
                 <TextareaAutosize
@@ -462,7 +460,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                 {useAzureOpenai ? (
                   <>
                     {envKeyMap["azure"] ? (
-                      <Label>Azure OpenAI API key set by admin.</Label>
+                      <Label>Azure OpenAI API key eingestellt vom Admin.</Label>
                     ) : (
                       <Input
                         placeholder="Azure OpenAI API Key"
@@ -475,7 +473,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                 ) : (
                   <>
                     {envKeyMap["openai"] ? (
-                      <Label>OpenAI API key set by admin.</Label>
+                      <Label>OpenAI API key eingestellt vom Admin.</Label>
                     ) : (
                       <Input
                         placeholder="OpenAI API Key"
@@ -495,7 +493,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                       <div className="space-y-1">
                         {envKeyMap["azure_openai_endpoint"] ? (
                           <Label className="text-xs">
-                            Azure endpoint set by admin.
+                            Azure endpoint eingestellt vom Admin..
                           </Label>
                         ) : (
                           <>
@@ -517,7 +515,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                       <div className="space-y-1">
                         {envKeyMap["azure_gpt_35_turbo_name"] ? (
                           <Label className="text-xs">
-                            Azure GPT-3.5 Turbo deployment name set by admin.
+                            Azure GPT-3.5 Turbo deployment name eingestellt vom Admin..
                           </Label>
                         ) : (
                           <>
@@ -539,7 +537,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                       <div className="space-y-1">
                         {envKeyMap["azure_gpt_45_turbo_name"] ? (
                           <Label className="text-xs">
-                            Azure GPT-4.5 Turbo deployment name set by admin.
+                            Azure GPT-4.5 Turbo deployment name eingestellt vom Admin.
                           </Label>
                         ) : (
                           <>
@@ -561,7 +559,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                       <div className="space-y-1">
                         {envKeyMap["azure_gpt_45_vision_name"] ? (
                           <Label className="text-xs">
-                            Azure GPT-4.5 Vision deployment name set by admin.
+                            Azure GPT-4.5 Vision deployment name eingestellt vom Admin..
                           </Label>
                         ) : (
                           <>
@@ -583,7 +581,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                       <div className="space-y-1">
                         {envKeyMap["azure_embeddings_name"] ? (
                           <Label className="text-xs">
-                            Azure Embeddings deployment name set by admin.
+                            Azure Embeddings deployment name eingestellt vom Admin.
                           </Label>
                         ) : (
                           <>
@@ -606,7 +604,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                     <div className="space-y-1">
                       {envKeyMap["openai_organization_id"] ? (
                         <Label className="text-xs">
-                          OpenAI Organization ID set by admin.
+                          OpenAI Organization ID eingestellt vom Admin.
                         </Label>
                       ) : (
                         <>
@@ -630,7 +628,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
 
               <div className="space-y-1">
                 {envKeyMap["anthropic"] ? (
-                  <Label>Anthropic API key set by admin.</Label>
+                  <Label>Anthropic API key eingestellt vom Admin.</Label>
                 ) : (
                   <>
                     <Label>Anthropic API Key</Label>
@@ -646,7 +644,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
 
               <div className="space-y-1">
                 {envKeyMap["google"] ? (
-                  <Label>Google Gemini API key set by admin.</Label>
+                  <Label>Google Gemini API key eingestellt vom Admin.</Label>
                 ) : (
                   <>
                     <Label>Google Gemini API Key</Label>
@@ -662,7 +660,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
 
               <div className="space-y-1">
                 {envKeyMap["mistral"] ? (
-                  <Label>Mistral API key set by admin.</Label>
+                  <Label>Mistral API key eingestellt vom Admin.</Label>
                 ) : (
                   <>
                     <Label>Mistral API Key</Label>
@@ -678,7 +676,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
 
               <div className="space-y-1">
                 {envKeyMap["groq"] ? (
-                  <Label>Groq API key set by admin.</Label>
+                  <Label>Groq API key eingestellt vom Admin.</Label>
                 ) : (
                   <>
                     <Label>Groq API Key</Label>
@@ -694,7 +692,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
 
               <div className="space-y-1">
                 {envKeyMap["perplexity"] ? (
-                  <Label>Perplexity API key set by admin.</Label>
+                  <Label>Perplexity API key eingestellt vom Admin.</Label>
                 ) : (
                   <>
                     <Label>Perplexity API Key</Label>
@@ -710,7 +708,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
 
               <div className="space-y-1">
                 {envKeyMap["openrouter"] ? (
-                  <Label>OpenRouter API key set by admin.</Label>
+                  <Label>OpenRouter API key eingestellt vom Admin.</Label>
                 ) : (
                   <>
                     <Label>OpenRouter API Key</Label>
@@ -734,7 +732,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
             <WithTooltip
               display={
                 <div>
-                  Download Chatbot UI 1.0 data as JSON. Import coming soon!
+                  Chatbot UI 1.0-Daten als JSON herunterladen. Import bald verfügbar!                
                 </div>
               }
               trigger={
@@ -749,11 +747,11 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
 
           <div className="ml-auto space-x-2">
             <Button variant="ghost" onClick={() => setIsOpen(false)}>
-              Cancel
+              Abbruch
             </Button>
 
             <Button ref={buttonRef} onClick={handleSave}>
-              Save
+            Speichern
             </Button>
           </div>
         </div>
