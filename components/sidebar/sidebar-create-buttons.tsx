@@ -18,10 +18,23 @@ interface SidebarCreateButtonsProps {
   hasData: boolean
 }
 
+const translationMap = {
+  chats: "Chats",
+  presets: "Voreinstellungen",
+  prompts: "Aufforderungen",
+  files: "Dateien",
+  collections: "Sammlungen",
+  assistants: "Assistenten",
+  tools: "Werkzeuge",
+  models: "Modelle",
+};
+
 export const SidebarCreateButtons: FC<SidebarCreateButtonsProps> = ({
   contentType,
   hasData
 }) => {
+  const translatedContentType = translationMap[contentType];
+
   const { profile, selectedWorkspace, folders, setFolders } =
     useContext(ChatbotUIContext)
   const { handleNewChat } = useChatHandler()
@@ -99,9 +112,9 @@ export const SidebarCreateButtons: FC<SidebarCreateButtonsProps> = ({
     <div className="flex w-full space-x-2">
       <Button className="flex h-[36px] grow" onClick={getCreateFunction()}>
         <IconPlus className="mr-1" size={20} />
-        New{" "}
-        {contentType.charAt(0).toUpperCase() +
-          contentType.slice(1, contentType.length - 1)}
+        Neue{" "}
+        {translatedContentType.charAt(0).toUpperCase() +
+          translatedContentType.slice(1)}
       </Button>
 
       {hasData && (

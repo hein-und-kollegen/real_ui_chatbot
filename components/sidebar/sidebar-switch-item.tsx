@@ -9,15 +9,28 @@ interface SidebarSwitchItemProps {
   onContentTypeChange: (contentType: ContentType) => void
 }
 
+const translationMap = {
+  chats: "Chats",
+  presets: "Voreinstellungen",
+  prompts: "Aufforderungen",
+  files: "Dateien",
+  collections: "Sammlungen",
+  assistants: "Assistenten",
+  tools: "Werkzeuge",
+  models: "Modelle",
+};
+
 export const SidebarSwitchItem: FC<SidebarSwitchItemProps> = ({
   contentType,
   icon,
   onContentTypeChange
 }) => {
+  const translatedContentType = translationMap[contentType];
+
   return (
     <WithTooltip
       display={
-        <div>{contentType[0].toUpperCase() + contentType.substring(1)}</div>
+        <div>{translatedContentType[0].toUpperCase() + translatedContentType.substring(1)}</div>
       }
       trigger={
         <TabsTrigger

@@ -247,7 +247,7 @@ export const QuickSettings: FC<QuickSettingsProps> = ({}) => {
             <Input
               ref={inputRef}
               className="w-full"
-              placeholder="Search..."
+              placeholder="Suche..."
               value={search}
               onChange={e => setSearch(e.target.value)}
               onKeyDown={e => e.stopPropagation()}

@@ -55,7 +55,7 @@ export const ChatSettingsForm: FC<ChatSettingsFormProps> = ({
 
         <TextareaAutosize
           className="bg-background border-input border-2"
-          placeholder="You are a helpful AI assistant."
+          placeholder="Du bist ein hilfsbereiter KI-Assistent."          
           onValueChange={prompt => {
             onChangeChatSettings({ ...chatSettings, prompt })
           }}
@@ -175,7 +175,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
           }
         />
 
-        <Label>Chats Include Profile Context</Label>
+        <Label>Profilkontext in Chats einbeziehen</Label>
 
         {showTooltip && (
           <WithTooltip
@@ -203,7 +203,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
           }
         />
 
-        <Label>Chats Include Workspace Instructions</Label>
+        <Label>Chats beinhalten Arbeitsbereichsanweisungen</Label>
 
         {showTooltip && (
           <WithTooltip

@@ -8,14 +8,27 @@ interface SidebarSearchProps {
   setSearchTerm: Function
 }
 
+const translationMap = {
+  chats: "Chats",
+  presets: "Voreinstellungen",
+  prompts: "Aufforderungen",
+  files: "Dateien",
+  collections: "Sammlungen",
+  assistants: "Assistenten",
+  tools: "Werkzeuge",
+  models: "Modelle",
+};
+
 export const SidebarSearch: FC<SidebarSearchProps> = ({
   contentType,
   searchTerm,
   setSearchTerm
 }) => {
+  const translatedContentType = translationMap[contentType];
+
   return (
     <Input
-      placeholder={`Search ${contentType}...`}
+      placeholder={`Suche ${translatedContentType}...`}
       value={searchTerm}
       onChange={e => setSearchTerm(e.target.value)}
     />

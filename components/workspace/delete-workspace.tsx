@@ -87,7 +87,7 @@ export const DeleteWorkspace: FC<DeleteWorkspaceProps> = ({
 
         <DialogFooter>
           <Button variant="ghost" onClick={() => setShowWorkspaceDialog(false)}>
-            Cancel
+            Abbruch
           </Button>
 
           <Button
@@ -96,7 +96,7 @@ export const DeleteWorkspace: FC<DeleteWorkspaceProps> = ({
             onClick={handleDeleteWorkspace}
             disabled={name !== workspace.name}
           >
-            Delete
+            Löschen
           </Button>
         </DialogFooter>
       </DialogContent>

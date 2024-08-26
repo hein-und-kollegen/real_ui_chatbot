@@ -29,6 +29,8 @@ export const SidebarItem: FC<SidebarItemProps> = ({
 
   const router = useRouter()
 
+
+
   const itemRef = useRef<HTMLDivElement>(null)
 
   const [isHovering, setIsHovering] = useState(false)
@@ -72,6 +74,7 @@ export const SidebarItem: FC<SidebarItemProps> = ({
       itemRef.current?.click()
     }
   }
+
 
   // const handleClickAction = async (
   //   e: React.MouseEvent<SVGSVGElement, MouseEvent>

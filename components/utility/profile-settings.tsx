@@ -403,7 +403,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                 <Label>Anzeigename im Chat</Label>
 
                 <Input
-                  placeholder="Chat display name..."
+                  placeholder="Chat Name..."
                   value={displayName}
                   onChange={e => setDisplayName(e.target.value)}
                   maxLength={PROFILE_DISPLAY_NAME_MAX}
