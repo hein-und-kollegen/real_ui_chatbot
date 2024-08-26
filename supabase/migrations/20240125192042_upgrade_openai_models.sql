@@ -94,7 +94,7 @@ BEGIN
         'Home',
         4096,
         'gpt-4-turbo-preview', -- Updated default model
-        'You are a friendly, helpful AI assistant.',
+        'Du bist ein freundlicher, hilfsbereiter KI-Assistent.',
         0.5,
         'My home workspace.',
         'openai',

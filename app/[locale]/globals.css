@@ -78,10 +78,10 @@
     --border: 210 100% 20%; /* Etwas helleres Blau für Grenzen */
     --input: 210 100% 20%; /* Dunkelblau für Eingaben */
 
-    --primary: 210 100% 30%; /* Helleres Blau für primäre Elemente */
+    --primary: #fff; /* Helleres Blau für primäre Elemente */
     --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
 
-    --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
+    --secondary: #fff; /* Dunkelblau für sekundäre Elemente */
     --secondary-foreground: 0 0% 98%; /* Weißer Text auf sekundären Elementen */
 
     --accent: 210 100% 35%; /* Hellblau für Akzente */
