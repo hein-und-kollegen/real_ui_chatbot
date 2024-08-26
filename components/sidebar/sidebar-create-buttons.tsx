@@ -114,7 +114,7 @@ export const SidebarCreateButtons: FC<SidebarCreateButtonsProps> = ({
         <IconPlus className="mr-1" size={20} />
         Neue{" "}
         {translatedContentType.charAt(0).toUpperCase() +
-          translatedContentType.slice(1, contentType.length - 1)}
+          translatedContentType.slice(1)}
       </Button>
 
       {hasData && (
