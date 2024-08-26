@@ -162,7 +162,7 @@ export default function WorkspaceLayout({ children }: WorkspaceLayoutProps) {
         "gpt-4-1106-preview") as LLMID,
       prompt:
         workspace?.default_prompt ||
-        "You are a friendly, helpful AI assistant.",
+        "Ich bin ein freundlicher, hilfsbereiter KI-Assistent, der dir gerne hilft.",
       temperature: workspace?.default_temperature || 0.5,
       contextLength: workspace?.default_context_length || 4096,
       includeProfileContext: workspace?.include_profile_context || true,

@@ -227,7 +227,7 @@ export const QuickSettings: FC<QuickSettingsProps> = ({}) => {
 
                 {selectedPreset?.name ||
                   selectedAssistant?.name ||
-                  t("Quick Settings")}
+                  t("Schnelleinstellungen")}
               </div>
 
               <IconChevronDown className="ml-1" />
@@ -241,7 +241,7 @@ export const QuickSettings: FC<QuickSettingsProps> = ({}) => {
         align="start"
       >
         {presets.length === 0 && assistants.length === 0 ? (
-          <div className="p-8 text-center">No items found.</div>
+          <div className="p-8 text-center">Keine Einträge gefunden.</div>
         ) : (
           <>
             <Input
