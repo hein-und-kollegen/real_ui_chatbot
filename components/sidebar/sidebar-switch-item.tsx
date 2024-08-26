@@ -17,12 +17,12 @@ export const SidebarSwitchItem: FC<SidebarSwitchItemProps> = ({
   return (
     <WithTooltip
       display={
-        <div>{contentType[0].toUpperCase() + contentType.substring(1)}</div>
+        <div>{"contentType[0].toUpperCase() + contentType.substring(1)"}</div>
       }
       trigger={
         <TabsTrigger
           className="hover:opacity-50"
-          value={contentType}
+          value={"contentType"}
           onClick={() => onContentTypeChange(contentType as ContentType)}
         >
           {icon}

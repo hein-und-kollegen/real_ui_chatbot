@@ -29,16 +29,7 @@ export const SidebarItem: FC<SidebarItemProps> = ({
 
   const router = useRouter()
 
-  const translationMap = {
-    chats: "Chats",
-    presets: "Voreinstellungen",
-    prompts: "Aufforderungen",
-    files: "Dateien",
-    collections: "Sammlungen",
-    assistants: "Assistenten",
-    tools: "Werkzeuge",
-    models: "Modelle",
-  };
+
 
   const itemRef = useRef<HTMLDivElement>(null)
 
@@ -83,7 +74,6 @@ export const SidebarItem: FC<SidebarItemProps> = ({
       itemRef.current?.click()
     }
   }
-  const translatedContentType = translationMap[contentType];
 
 
   // const handleClickAction = async (
@@ -117,8 +107,8 @@ export const SidebarItem: FC<SidebarItemProps> = ({
         {icon}
 
         <div className="ml-3 flex-1 truncate text-sm font-semibold">
-          dfg dgf       
-</div>
+          {item.name}
+        </div>
 
         {/* TODO */}
         {/* {isHovering && (
