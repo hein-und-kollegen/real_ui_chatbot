@@ -30,7 +30,7 @@
 
 @layer base {
   :root {
-    --background: 39 45% 64%; /* Hauptfarbe als Hintergrund (#d1b173) */
+    --background: 0 0% 100%; /* Hauptfarbe als Hintergrund (#d1b173) */
     --foreground: 0 0% 16%; /* Dunkler Text für guten Kontrast auf dem goldenen Hintergrund (#2a2a2a) */
   
     --muted: 42 56% 80%; /* Ein hellerer, abgedämpfter Ton für sekundäre Elemente (#e7d3ab) */
@@ -78,8 +78,8 @@
     --border: 210 100% 20%; /* Etwas helleres Blau für Grenzen */
     --input: 0 0% 100%; /* Dunkelblau für Eingaben */
 
-    --primary: 212 100% 60%; /* Helleres Blau für primäre Elemente */
-    --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
+    --primary: 212 100% 97%; /* Helleres Blau für primäre Elemente */
+    --primary-foreground: 212 100% 8%; /* Weiß für Text auf primären Elementen */
 
     --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
     --secondary-foreground: 0 0% 98%; /* Weißer Text auf sekundären Elementen */
