@@ -97,7 +97,7 @@ export const ModelSelect: FC<ModelSelectProps> = ({
       >
         {allModels.length === 0 ? (
           <div className="rounded text-sm font-bold">
-            Unlock models by entering API keys in your profile settings.
+          Schalte Modelle frei, indem du API-Schlüssel in den Profileinstellungen eingibst.
           </div>
         ) : (
           <Button
@@ -118,7 +118,7 @@ export const ModelSelect: FC<ModelSelectProps> = ({
                   </div>
                 </>
               ) : (
-                <div className="flex items-center">Select a model</div>
+                <div className="flex items-center">Wähle ein Model aus</div>
               )}
             </div>
 
@@ -145,7 +145,7 @@ export const ModelSelect: FC<ModelSelectProps> = ({
         <Input
           ref={inputRef}
           className="w-full"
-          placeholder="Search models..."
+          placeholder="Suche Modelle..."
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
