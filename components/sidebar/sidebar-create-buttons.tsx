@@ -29,10 +29,25 @@ const articleMap = {
   models: "Neues",     // Sächlich
 };
 
+const translationMap = {
+  chats: "Chats",
+  presets: "Voreinstellungen",
+  prompts: "Aufforderungen",
+  files: "Dateien",
+  collections: "Sammlungen",
+  assistants: "Assistenten",
+  tools: "Werkzeuge",
+  models: "Modelle",
+};
+
+
+
 export const SidebarCreateButtons: FC<SidebarCreateButtonsProps> = ({
   contentType,
   hasData
 }) => {
+  const translatedContentType = translationMap[contentType];
+
   const { profile, selectedWorkspace, folders, setFolders } =
     useContext(ChatbotUIContext)
   const { handleNewChat } = useChatHandler()
@@ -111,9 +126,10 @@ export const SidebarCreateButtons: FC<SidebarCreateButtonsProps> = ({
       <Button className="flex h-[36px] grow" onClick={getCreateFunction()}>
         <IconPlus className="mr-1" size={20} />
         {articleMap[contentType]}{" "}
-        {contentType.charAt(0).toUpperCase() +
-          contentType.slice(1, contentType.length - 1)}
+        {translatedContentType.charAt(0).toUpperCase() +
+          translatedContentType.slice(1)}
       </Button>
+
 
       {hasData && (
         <Button className="size-[36px] p-1" onClick={handleCreateFolder}>
