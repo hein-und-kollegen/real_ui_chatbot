@@ -18,17 +18,6 @@ interface SidebarCreateButtonsProps {
   hasData: boolean
 }
 
-const articleMap = {
-  chats: "Neuer",      // Männlich
-  presets: "Neue",     // Weiblich
-  prompts: "Neue",     // Weiblich
-  files: "Neue",       // Weiblich
-  collections: "Neue", // Weiblich
-  assistants: "Neuer", // Männlich
-  tools: "Neue",       // Weiblich
-  models: "Neues",     // Sächlich
-};
-
 const translationMap = {
   chats: "Chats",
   presets: "Voreinstellungen",
@@ -39,8 +28,6 @@ const translationMap = {
   tools: "Werkzeuge",
   models: "Modelle",
 };
-
-
 
 export const SidebarCreateButtons: FC<SidebarCreateButtonsProps> = ({
   contentType,
@@ -125,11 +112,10 @@ export const SidebarCreateButtons: FC<SidebarCreateButtonsProps> = ({
     <div className="flex w-full space-x-2">
       <Button className="flex h-[36px] grow" onClick={getCreateFunction()}>
         <IconPlus className="mr-1" size={20} />
-        {articleMap[contentType]}{" "}
+        Neue{" "}
         {translatedContentType.charAt(0).toUpperCase() +
-          translatedContentType.slice(1)}
+          translatedContentType.slice(1, contentType.length - 1)}
       </Button>
-
 
       {hasData && (
         <Button className="size-[36px] p-1" onClick={handleCreateFolder}>
