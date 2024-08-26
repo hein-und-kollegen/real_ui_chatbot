@@ -69,7 +69,7 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
         <DropdownMenuSeparator />
 
         <DropdownMenuItem className="flex justify-between">
-          <div>Show Help</div>
+          <div>Zeige Hilfe</div>
           <div className="flex opacity-60">
             <div className="min-w-[30px] rounded border-DEFAULT p-1 text-center">
               ⌘
@@ -84,8 +84,8 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
         </DropdownMenuItem>
 
         <DropdownMenuItem className="flex justify-between">
-          <div>Show Workspaces</div>
-          <div className="flex opacity-60">
+        <div>Arbeitsbereiche anzeigen</div>
+        <div className="flex opacity-60">
             <div className="min-w-[30px] rounded border-DEFAULT p-1 text-center">
               ⌘
             </div>
@@ -99,7 +99,7 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
         </DropdownMenuItem>
 
         <DropdownMenuItem className="flex w-[300px] justify-between">
-          <div>New Chat</div>
+          <div>Neuer Chat</div>
           <div className="flex opacity-60">
             <div className="min-w-[30px] rounded border-DEFAULT p-1 text-center">
               ⌘
@@ -114,7 +114,7 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
         </DropdownMenuItem>
 
         <DropdownMenuItem className="flex justify-between">
-          <div>Focus Chat</div>
+          <div>Fokus auf den Chat</div>
           <div className="flex opacity-60">
             <div className="min-w-[30px] rounded border-DEFAULT p-1 text-center">
               ⌘
@@ -129,7 +129,7 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
         </DropdownMenuItem>
 
         <DropdownMenuItem className="flex justify-between">
-          <div>Toggle Files</div>
+          <div>Dateiansicht ein-/ausschalten</div>
           <div className="flex opacity-60">
             <div className="min-w-[30px] rounded border-DEFAULT p-1 text-center">
               ⌘
@@ -144,7 +144,7 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
         </DropdownMenuItem>
 
         <DropdownMenuItem className="flex justify-between">
-          <div>Toggle Retrieval</div>
+          <div>Datenabruf ein-/ausschalten</div>
           <div className="flex opacity-60">
             <div className="min-w-[30px] rounded border-DEFAULT p-1 text-center">
               ⌘
@@ -159,7 +159,7 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
         </DropdownMenuItem>
 
         <DropdownMenuItem className="flex justify-between">
-          <div>Open Settings</div>
+          <div>Einstellungen öffnen</div>
           <div className="flex opacity-60">
             <div className="min-w-[30px] rounded border-DEFAULT p-1 text-center">
               ⌘
@@ -174,8 +174,8 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
         </DropdownMenuItem>
 
         <DropdownMenuItem className="flex justify-between">
-          <div>Open Quick Settings</div>
-          <div className="flex opacity-60">
+              <div>Schnelleinstellungen öffnen</div>
+                  <div className="flex opacity-60">
             <div className="min-w-[30px] rounded border-DEFAULT p-1 text-center">
               ⌘
             </div>
@@ -189,8 +189,8 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
         </DropdownMenuItem>
 
         <DropdownMenuItem className="flex justify-between">
-          <div>Toggle Sidebar</div>
-          <div className="flex opacity-60">
+        <div>Seitenleiste ein-/ausblenden</div>
+        <div className="flex opacity-60">
             <div className="min-w-[30px] rounded border-DEFAULT p-1 text-center">
               ⌘
             </div>
