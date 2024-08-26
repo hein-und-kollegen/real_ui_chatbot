@@ -76,12 +76,12 @@
     --card-foreground: 0 0% 98%; /* Weißer Text auf Karten */
 
     --border: 210 100% 20%; /* Etwas helleres Blau für Grenzen */
-    --input: 210 100% 20%; /* Dunkelblau für Eingaben */
+    --input: 0 0% 100%; /* Dunkelblau für Eingaben */
 
-    --primary: #fff; /* Helleres Blau für primäre Elemente */
+    --primary: 212 100% 60%; /* Helleres Blau für primäre Elemente */
     --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
 
-    --secondary: #fff; /* Dunkelblau für sekundäre Elemente */
+    --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
     --secondary-foreground: 0 0% 98%; /* Weißer Text auf sekundären Elementen */
 
     --accent: 210 100% 35%; /* Hellblau für Akzente */
