@@ -222,7 +222,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
       </div>
 
       <div className="mt-5">
-        <Label>Embeddings Provider</Label>
+        <Label>Genutze Provider</Label>
 
         <Select
           value={chatSettings.embeddingsProvider}

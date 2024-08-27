@@ -201,7 +201,7 @@ export const WorkspaceSettings: FC<WorkspaceSettingsProps> = ({}) => {
           <Tabs defaultValue="main">
             <TabsList className="mt-4 grid w-full grid-cols-2">
               <TabsTrigger value="main">Main</TabsTrigger>
-              <TabsTrigger value="defaults">Defaults</TabsTrigger>
+              <TabsTrigger value="defaults">Voreinstellungen</TabsTrigger>
             </TabsList>
 
             <TabsContent className="mt-4 space-y-4" value="main">
@@ -286,11 +286,11 @@ export const WorkspaceSettings: FC<WorkspaceSettingsProps> = ({}) => {
 
           <div className="space-x-2">
             <Button variant="ghost" onClick={() => setIsOpen(false)}>
-              Cancel
+              Abbruch
             </Button>
 
             <Button ref={buttonRef} onClick={handleSave}>
-              Save
+              Speichern
             </Button>
           </div>
         </div>

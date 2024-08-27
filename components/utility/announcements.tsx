@@ -120,7 +120,7 @@ export const Announcements: FC<AnnouncementsProps> = () => {
                           size="sm"
                           onClick={() => markAsRead(a.id)}
                         >
-                          Mark as Read
+                          Als gelesen markieren
                         </Button>
 
                         {a.link && (
@@ -144,17 +144,17 @@ export const Announcements: FC<AnnouncementsProps> = () => {
                   variant="outline"
                   onClick={markAllAsRead}
                 >
-                  Mark All as Read
+                  Als alles gelesen markieren
                 </Button>
               ) : (
                 <div className="text-muted-foreground text-sm leading-snug">
-                  You are all caught up!
-                  {announcements.length > 0 && (
+                      Du bist auf dem neusten Stand                  
+                      {announcements.length > 0 && (
                     <div
                       className="mt-6 cursor-pointer underline"
                       onClick={() => markAllAsUnread()}
                     >
-                      Show recent updates
+                      zeige kürzliche Updates
                     </div>
                   )}
                 </div>

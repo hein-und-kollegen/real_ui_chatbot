@@ -63,11 +63,11 @@ export const UpdateChat: FC<UpdateChatProps> = ({ chat }) => {
 
         <DialogFooter>
           <Button variant="ghost" onClick={() => setShowChatDialog(false)}>
-            Cancel
+            Abbruch
           </Button>
 
           <Button ref={buttonRef} onClick={handleUpdateChat}>
-            Save
+            Speichern
           </Button>
         </DialogFooter>
       </DialogContent>
