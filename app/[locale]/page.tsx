@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <div className="flex size-full flex-col items-center justify-center">
       
-      <Image src="/images/H&K_Logo_weiß-01.png" alt="Logo" width={500} height={500} />
+      <Image src="/images/H&K_Logo_weiß-01.png" alt="Logo" width={60} height={60} />
 
       <div className="mt-2 text-4xl font-bold">Chatbot von Hein & Kollegen</div>
 
