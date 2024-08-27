@@ -4,7 +4,6 @@ import { ChatbotUISVG } from "@/components/icons/chatbotui-svg"
 import { IconArrowRight } from "@tabler/icons-react"
 import { useTheme } from "next-themes"
 import Link from "next/link"
-import logo from '../public/images/H&K_Logo_weiß-01.png';
 import Image from 'next/image';
 
 
@@ -14,7 +13,7 @@ export default function HomePage() {
   return (
     <div className="flex size-full flex-col items-center justify-center">
       
-      <Image src={logo} alt="Logo" width={300} height={300} />
+      <Image src="/images/H&K_Logo_weiß-01.png" alt="Logo" width={500} height={500} />
 
       <div className="mt-2 text-4xl font-bold">Chatbot von Hein & Kollegen</div>
 
