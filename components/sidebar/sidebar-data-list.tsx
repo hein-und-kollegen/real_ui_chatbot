@@ -276,22 +276,32 @@ export const SidebarDataList: FC<SidebarDataListProps> = ({
 
             {contentType === "chats" ? (
               <>
-                {["Today", "Yesterday", "Previous Week", "Older"].map(
-                  dateCategory => {
-                    const sortedData = getSortedData(
-                      dataWithoutFolders,
-                      dateCategory as
-                        | "Today"
-                        | "Yesterday"
-                        | "Previous Week"
-                        | "Older"
-                    )
+                {(["Today", "Yesterday", "Previous Week", "Older"] as const).map(dateCategory => {
+                const sortedData = getSortedData(
+                  dataWithoutFolders,
+                  dateCategory // Kein `as` erforderlich, Typ ist bereits bekannt
+                );
+                
+                    function translateDateCategory(dateCategory: "Today" | "Yesterday" | "Previous Week" | "Older"): string {
+                      switch (dateCategory) {
+                        case "Today":
+                          return "Heute";
+                        case "Yesterday":
+                          return "Gestern";
+                        case "Previous Week":
+                          return "Letzte Woche";
+                        case "Older":
+                          return "Älter";
+                        default:
+                          return dateCategory; // Falls eine unbekannte Kategorie vorkommt, wird sie nicht übersetzt.
+                      }
+                    }
 
                     return (
                       sortedData.length > 0 && (
                         <div key={dateCategory} className="pb-2">
                           <div className="text-muted-foreground mb-1 text-sm font-bold">
-                            {dateCategory}
+                          {translateDateCategory(dateCategory)}
                           </div>
 
                           <div
