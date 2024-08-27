@@ -16,7 +16,7 @@ export default function HomePage() {
       <div className="mt-2 text-4xl font-bold">Chatbot von Hein & Kollegen</div>
 
       <Link
-        className="px-8 py-2 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-transparent hover:border-teal-500 items-center justify-center font-semibold"
+        className="px-8 py-2 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-transparent hover:border-teal-500 items-center justify-center"
         href="/login"
       >
         Chat starten
