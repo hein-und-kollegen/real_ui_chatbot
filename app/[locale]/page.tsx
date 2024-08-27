@@ -13,7 +13,7 @@ export default function HomePage() {
       
       <img src="/images/H&K_Logo_45mm_weiß.svg" alt="Logo" width="150" height="auto" />
 
-      <div className="mt-8 text-4xl font-bold">Chatbot von Hein & Kollegen</div>
+      <div className="mt-8 text-4xl font-bold text-center">Chatbot <br/> von <br/> Hein & Kollegen</div>
 
       <Link
         className="mt-8 flex w-[200px] items-center justify-center rounded-md bg-slate-500 p-2 font-semibold"
