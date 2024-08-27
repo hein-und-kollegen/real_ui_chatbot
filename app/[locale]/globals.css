@@ -104,13 +104,15 @@
 }
 
 .btn-primary {
-  background-color: red;
-  color: white;
+  background-color: #d1b173;
+  color: black;
+  transition: background-color 0.3s ease-in-out; /* Übergangseffekt */
+  transition-delay: 0.2s; /* Delay von 0,2 Sekunden */
 }
 
 
 .btn-hover {
-  background-color: #d1b173;
+  background-color: #a38c5c;
   color: white;
 }
 
