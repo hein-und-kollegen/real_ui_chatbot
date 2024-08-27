@@ -13,10 +13,10 @@ export const Brand: FC<BrandProps> = ({ theme = "dark" }) => {
     
     <div className="flex cursor-pointer flex-col items-center hover:opacity-50">
     <div className="mb-2">
-      <ChatbotUISVG theme={theme === "dark" ? "dark" : "light"} scale={0.3} />
+          <img src="/images/H&K_Logo_45mm_weiß.svg" alt="Logo" width="150" height="auto" />
     </div>
 
-    <div className="text-4xl font-bold tracking-wide text-center">Hein & Kollegen Chatbot</div>
+    <div className="text-2xl font-bold tracking-wide text-center">Hein & Kollegen Chatbot</div>
   </div>
    
   )
