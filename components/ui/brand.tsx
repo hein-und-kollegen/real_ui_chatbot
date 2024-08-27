@@ -13,7 +13,7 @@ export const Brand: FC<BrandProps> = ({ theme = "dark" }) => {
     
     <div className="flex cursor-pointer flex-col items-center hover:opacity-50">
     <div className="mb-2">
-          <img src="/images/H&K_Logo_45mm_weiß.svg" alt="Logo" />
+          <img src="/images/H&K_Logo_45mm_weiß.svg" alt="Logo" width="100" height="auto" />
     </div>
 
     <div className="text-4xl font-bold tracking-wide text-center">Hein & Kollegen Chatbot</div>
