@@ -102,3 +102,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+
+.btn-hover {
+  background-color: #d1b173;
+  color: white;
+}
+
