@@ -25,7 +25,7 @@ export const ChatRetrievalSettings: FC<ChatRetrievalSettingsProps> = ({}) => {
         <WithTooltip
           delayDuration={0}
           side="top"
-          display={<div>Adjust retrieval settings.</div>}
+          display={<div>Abrufparameter anpassen.</div>}
           trigger={
             <IconAdjustmentsHorizontal
               className="cursor-pointer pt-[4px] hover:opacity-50"
@@ -38,7 +38,7 @@ export const ChatRetrievalSettings: FC<ChatRetrievalSettingsProps> = ({}) => {
       <DialogContent>
         <div className="space-y-3">
           <Label className="flex items-center space-x-1">
-            <div>Source Count:</div>
+            <div>Anzahl der Quellen:</div>
 
             <div>{sourceCount}</div>
           </Label>
@@ -56,7 +56,7 @@ export const ChatRetrievalSettings: FC<ChatRetrievalSettingsProps> = ({}) => {
 
         <DialogFooter>
           <Button size="sm" onClick={() => setIsOpen(false)}>
-            Save & Close
+            Speichern & Schließen
           </Button>
         </DialogFooter>
       </DialogContent>
