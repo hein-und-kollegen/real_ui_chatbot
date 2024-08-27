@@ -116,3 +116,7 @@
   color: white;
 }
 
+.hover-opacity-90:hover {
+  opacity: 0.9;
+}
+
