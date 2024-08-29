@@ -78,7 +78,7 @@
     --border: 40 30% 51%; /* Etwas helleres Blau für Grenzen */
     --input: 40 30% 51%; /* Gold für Rand für Eingaben */
 
-    --primary: 40 30% 51%; /* Dunkel Gold für primäre Elemente */
+    --primary: 210 30% 20%; /* Dunkel Gold für primäre Elemente/ Jetzt wieder Gold */
     --primary-foreground: 212 100% 8%; /* Weiß für Text auf primären Elementen */
 
     --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
