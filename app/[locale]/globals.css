@@ -78,13 +78,13 @@
     --border: 40 30% 51%; /* Etwas helleres Blau für Grenzen */
     --input: 40 30% 51%; /* Gold für Rand für Eingaben */
 
-    --primary: 210 30% 20%; /* Dunkel Gold für primäre Elemente/ Jetzt wieder Gold */
+    --primary: 210 100% 15%; /* Dunkel Gold für primäre Elemente/ Jetzt wieder Gold */
     --primary-foreground: 212 100% 8%; /* Weiß für Text auf primären Elementen */
 
     --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
     --secondary-foreground: 0 0% 98%; /* Weißer Text auf sekundären Elementen */
 
-    --accent: 40 30% 51%; /* Hein und Kollegen Gold für Hover*/
+    --accent: 210 100% 15%; /* helles blau für Hover*/
     --accent-foreground: 0 0% 98%; /* Weißer Text auf Akzenten */
 
     --destructive: 0 80% 50%; /* Rot für destruktive Aktionen */
