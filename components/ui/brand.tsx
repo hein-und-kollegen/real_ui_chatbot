@@ -11,7 +11,7 @@ interface BrandProps {
 export const Brand: FC<BrandProps> = ({ theme = "dark" }) => {
   return (
     
-    <div className="flex cursor-pointer flex-col items-center hover:opacity-50">
+    <div className="flex cursor-pointer flex-col items-center hover:opacity-90">
     <div className="mb-2">
           <img src="/images/H&K_Logo_45mm_weiß.svg" alt="Logo" width="150" height="auto" />
     </div>

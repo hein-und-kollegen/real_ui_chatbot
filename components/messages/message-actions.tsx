@@ -54,7 +54,7 @@ export const MessageActions: FC<MessageActionsProps> = ({
           display={<div>Fork Chat</div>}
           trigger={
             <IconGitFork
-              className="cursor-pointer hover:opacity-50"
+              className="cursor-pointer hover:opacity-90"
               size={MESSAGE_ICON_SIZE}
               onClick={handleForkChat}
             />
@@ -69,7 +69,7 @@ export const MessageActions: FC<MessageActionsProps> = ({
           display={<div>Edit</div>}
           trigger={
             <IconEdit
-              className="cursor-pointer hover:opacity-50"
+              className="cursor-pointer hover:opacity-90"
               size={MESSAGE_ICON_SIZE}
               onClick={onEdit}
             />
@@ -87,7 +87,7 @@ export const MessageActions: FC<MessageActionsProps> = ({
               <IconCheck size={MESSAGE_ICON_SIZE} />
             ) : (
               <IconCopy
-                className="cursor-pointer hover:opacity-50"
+                className="cursor-pointer hover:opacity-90"
                 size={MESSAGE_ICON_SIZE}
                 onClick={handleCopy}
               />
@@ -103,7 +103,7 @@ export const MessageActions: FC<MessageActionsProps> = ({
           display={<div>Regenerate</div>}
           trigger={
             <IconRepeat
-              className="cursor-pointer hover:opacity-50"
+              className="cursor-pointer hover:opacity-90"
               size={MESSAGE_ICON_SIZE}
               onClick={onRegenerate}
             />

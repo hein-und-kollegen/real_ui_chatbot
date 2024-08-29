@@ -120,7 +120,3 @@
   stroke: #d1b173; /* Ändert die Strichfarbe der SVG */
 }
 
-
-.hover:opacity-50:hover{
-  opacity: 1!important;
-}

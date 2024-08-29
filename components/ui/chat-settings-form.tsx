@@ -186,7 +186,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
               </div>
             }
             trigger={
-              <IconInfoCircle className="cursor-hover:opacity-50" size={16} />
+              <IconInfoCircle className="cursor-hover:opacity-90" size={16} />
             }
           />
         )}
@@ -215,7 +215,7 @@ const AdvancedContent: FC<AdvancedContentProps> = ({
               </div>
             }
             trigger={
-              <IconInfoCircle className="cursor-hover:opacity-50" size={16} />
+              <IconInfoCircle className="cursor-hover:opacity-90" size={16} />
             }
           />
         )}

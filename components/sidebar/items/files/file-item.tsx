@@ -31,7 +31,7 @@ export const FileItem: FC<FileItemProps> = ({ file }) => {
       renderInputs={() => (
         <>
           <div
-            className="cursor-pointer underline hover:opacity-50"
+            className="cursor-pointer underline hover:opacity-90"
             onClick={getLinkAndView}
           >
             View {file.name}

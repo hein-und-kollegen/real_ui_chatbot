@@ -51,7 +51,7 @@ export const ChatSecondaryButtons: FC<ChatSecondaryButtonsProps> = ({}) => {
             trigger={
               <div className="mt-1">
                 <IconInfoCircle
-                  className="cursor-default hover:opacity-50"
+                  className="cursor-default hover:opacity-90"
                   size={24}
                 />
               </div>
@@ -64,7 +64,7 @@ export const ChatSecondaryButtons: FC<ChatSecondaryButtonsProps> = ({}) => {
             trigger={
               <div className="mt-1">
                 <IconMessagePlus
-                  className="cursor-pointer hover:opacity-50"
+                  className="cursor-pointer hover:opacity-90"
                   size={24}
                   onClick={handleNewChat}
                 />
