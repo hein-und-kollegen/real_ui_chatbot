@@ -75,22 +75,22 @@
     --card: 210 100% 15%; /* Sehr dunkles Blau für Karten-Hintergrund */
     --card-foreground: 0 0% 98%; /* Weißer Text auf Karten */
 
-    --border: 40 30% 51%; /* Etwas helleres Blau für Grenzen */
-    --input: 40 30% 51%; /* Gold für Rand für Eingaben */
+    --border: 210 100% 20%; /* Etwas helleres Blau für Grenzen */
+    --input: 210 100% 20%; /* Dunkelblau für Eingaben */
 
-    --primary: 40 30% 51%; /* Dunkel Gold für primäre Elemente */
-    --primary-foreground: 212 100% 8%; /* Weiß für Text auf primären Elementen */
+    --primary: 210 100% 30%; /* Helleres Blau für primäre Elemente */
+    --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
 
     --secondary: 210 100% 15%; /* Dunkelblau für sekundäre Elemente */
     --secondary-foreground: 0 0% 98%; /* Weißer Text auf sekundären Elementen */
 
-    --accent: 40 30% 51%; /* Hein und Kollegen Gold für Hover*/
+    --accent: 210 100% 35%; /* Hellblau für Akzente */
     --accent-foreground: 0 0% 98%; /* Weißer Text auf Akzenten */
 
     --destructive: 0 80% 50%; /* Rot für destruktive Aktionen */
     --destructive-foreground: 0 0% 98%; /* Weißer Text auf destruktiven Elementen */
 
-    --ring: 40 30% 51%; /* Blau für Ringe und Fokus-Indikatoren */
+    --ring: 210 100% 30%; /* Blau für Ringe und Fokus-Indikatoren */
   }
 }
 
@@ -115,8 +115,8 @@
   background-color: #a38c5c;
   color: white;
 }
-
-.hover-opacity-90:hover {
-  opacity: 0.9;
+/* Farbe  */
+.tabler-icon:hover {
+  stroke: #d1b173; /* Ändert die Strichfarbe der SVG */
 }
 

@@ -119,7 +119,7 @@ export const ChatFilesDisplay: FC<ChatFilesDisplayProps> = ({}) => {
             {messageImages.map((image, index) => (
               <div
                 key={index}
-                className="relative flex h-[64px] cursor-pointer items-center space-x-4 rounded-xl hover:opacity-50"
+                className="relative flex h-[64px] cursor-pointer items-center space-x-4 rounded-xl hover:opacity-90"
               >
                 <Image
                   className="rounded"
@@ -175,7 +175,7 @@ export const ChatFilesDisplay: FC<ChatFilesDisplayProps> = ({}) => {
               ) : (
                 <div
                   key={file.id}
-                  className="relative flex h-[64px] cursor-pointer items-center space-x-4 rounded-xl border-2 px-4 py-3 hover:opacity-50"
+                  className="relative flex h-[64px] cursor-pointer items-center space-x-4 rounded-xl border-2 px-4 py-3 hover:opacity-90"
                   onClick={() => getLinkAndView(file)}
                 >
                   <div className="rounded bg-blue-500 p-2">

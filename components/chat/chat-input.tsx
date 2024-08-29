@@ -180,7 +180,7 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
                 )
               }
             >
-              <div className="flex cursor-pointer items-center justify-center space-x-1 rounded-lg bg-purple-600 px-3 py-1 hover:opacity-50">
+              <div className="flex cursor-pointer items-center justify-center space-x-1 rounded-lg bg-purple-600 px-3 py-1 hover:opacity-90">
                 <IconBolt size={20} />
 
                 <div>{tool.name}</div>
@@ -218,7 +218,7 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
 
         <>
           <IconCirclePlus
-            className="absolute bottom-[12px] left-3 cursor-pointer p-1 hover:opacity-50"
+            className="absolute bottom-[12px] left-3 cursor-pointer p-1 hover:opacity-90"
             size={32}
             onClick={() => fileInputRef.current?.click()}
           />
@@ -253,7 +253,7 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
           onCompositionEnd={() => setIsTyping(false)}
         />
 
-        <div className="absolute bottom-[14px] right-3 cursor-pointer hover:opacity-50">
+        <div className="absolute bottom-[14px] right-3 cursor-pointer hover:opacity-90">
           {isGenerating ? (
             <IconPlayerStopFilled
               className="hover:bg-background animate-pulse rounded bg-transparent p-1"

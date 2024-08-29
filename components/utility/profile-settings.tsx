@@ -297,7 +297,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
       <SheetTrigger asChild>
         {profile.image_url ? (
           <Image
-            className="mt-2 size-[34px] cursor-pointer rounded hover:opacity-50"
+            className="mt-2 size-[34px] cursor-pointer rounded hover:opacity-90"
             src={profile.image_url + "?" + new Date().getTime()}
             height={34}
             width={34}
@@ -737,7 +737,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
               }
               trigger={
                 <IconFileDownload
-                  className="cursor-pointer hover:opacity-50"
+                  className="cursor-pointer hover:opacity-90"
                   size={32}
                   onClick={exportLocalStorageAsJSON}
                 />
