@@ -116,7 +116,7 @@
   color: white;
 }
 
-.hover-opacity-90:hover {
-  opacity: 0.9;
+.tabler-icon.tabler-icon-message:hover {
+  fill: green; /* Ändert die Füllfarbe der SVG */
+  stroke: green; /* Ändert die Strichfarbe der SVG */
 }
-
