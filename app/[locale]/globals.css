@@ -115,7 +115,12 @@
   background-color: #a38c5c;
   color: white;
 }
-
-.tabler-icon.tabler-icon-message:hover {
+/* Farbe  */
+.tabler-icon:hover {
   stroke: #d1b173; /* Ändert die Strichfarbe der SVG */
+}
+
+
+.hover:opacity-50:hover{
+  opacity: 1!important;
 }
