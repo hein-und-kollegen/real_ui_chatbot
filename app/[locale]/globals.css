@@ -117,6 +117,5 @@
 }
 
 .tabler-icon.tabler-icon-message:hover {
-  fill: green; /* Ändert die Füllfarbe der SVG */
-  stroke: green; /* Ändert die Strichfarbe der SVG */
+  stroke: #d1b173; /* Ändert die Strichfarbe der SVG */
 }
