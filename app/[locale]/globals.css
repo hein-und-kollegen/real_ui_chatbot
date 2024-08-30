@@ -76,7 +76,7 @@
     --card-foreground: 0 0% 98%; /* Weißer Text auf Karten */
 
     --border: 210 100% 20%; /* Etwas helleres Blau für Grenzen */
-    --input: 210 100% 20%; /* Dunkelblau für Eingaben */
+    --input: #4aa6ff; /* Dunkelblau für Eingaben */
 
     --primary: 210 100% 30%; /* Helleres Blau für primäre Elemente */
     --primary-foreground: 0 0% 100%; /* Weiß für Text auf primären Elementen */
