@@ -263,8 +263,8 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
           ) : (
             <IconSend
               className={cn(
-                "bg-primary text-secondary rounded p-1",
-                !userInput && "cursor-not-allowed opacity-50"
+                "bg-brigther-20 text-secondary rounded p-1",
+                !userInput && "cursor-not-allowed opacity-70"
               )}
               onClick={() => {
                 if (!userInput) return
